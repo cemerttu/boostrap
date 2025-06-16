@@ -69,7 +69,10 @@
   height: 10%;
   object-fit: contain; /* keeps aspect ratio */
 }
-
+.mb-3{
+  border-radius: 10px;
+  background-color: #222;
+}
   </style>
 <body class="background">
 </head>
@@ -79,17 +82,17 @@
     <a class="navbar-brand" href="#">
       <img src="logo.webp" alt="please wait" style="width: 30px; height:30px;" class="d-inline-block align-text-top">
       <p><i>Fictional Restaurant</i></p>
-      <img src="logo.png" alt="Agency Logo" class="d-inline-block align-text-top">
+      <!-- <img src="logo.png" alt="Agency Logo" class="d-inline-block align-text-top"> -->
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
+    
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
-        <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -148,7 +151,7 @@
 </section>
 
 
-<section class="container my-5">
+<section id="contact" class="container my-5">
   <div class="row align-items-center">
     <!-- Image Column -->
     <div class="col-md-6">
@@ -157,7 +160,7 @@
 
     <!-- Text Column -->
     <div class="col-md-6">
-      <h2>About Us</h2>
+      <h2 id="about">About Us</h2>
       <p>We are a passionate team creating delightful dining experiences. Visit us for a taste of perfection!</p>
       <h6>Professional and Elegant:</h6>
       <p>At Fictional Restaurant, we blend culinary excellence with warm hospitality to create a dining experience that feels like home.</p>
@@ -169,18 +172,18 @@
 
 <section class="container my-5">
   <h2 class="text-center">Contact Us</h2>
-  <form>
+  <form >
     <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" id="name" class="form-control">
+      <label for="name" class="form-label"><i>Name</i></label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name" autofocus required>
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" id="email" class="form-control">
+      <label for="email" class="form-label"><i>Email</i></label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
     </div>
     <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea id="message" class="form-control" rows="4"></textarea>
+      <label for="message" class="form-label"><i>Message</i></label>
+      <textarea id="message" class="form-control" rows="4" placeholder="Enter your message" required></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Send</button>
   </form>
