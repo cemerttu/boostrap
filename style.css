@@ -1,14 +1,17 @@
 body.background {
-     background-image: url(ian.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      color: white;
+  background-image: url(ian.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+  margin: 0;
+  padding: 0;
     }
 
    .hero-section {
-  background: url('scenic-destination.jpg') center/cover no-repeat;
+ background: url('scenic-destination.jpg') center/cover no-repeat;
   height: 90vh;
   position: relative;
 }
